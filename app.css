@@ -1,0 +1,54 @@
+* {
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.trackControls {
+  display: none;
+}
+
+.container {
+  position: absolute;
+
+  width: 100%;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.navButton {
+  position: fixed;
+  top: 46%;
+  z-index: 5;
+}
+
+.gridCenter {
+  width: 95vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  grid-row-gap: 1rem;
+  grid-column-gap: 15px;
+
+  /* change for responsive design */
+  padding-left: 2rem;
+}
+
+.gridChild {
+  box-shadow: 1px 4px 6px #333333;
+  transition: linear 0.5s;
+}
+
+.gridChild:hover {
+  box-shadow: 1px 4px 12px #ffffff;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.imgContainer img {
+  width: 100%;
+  display: block;
+  transition: linear 0.2s;
+  object-fit: fill;
+}
